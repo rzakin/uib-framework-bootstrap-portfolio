@@ -11,16 +11,17 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="card bg-dark text-white">
+  <body class="">
+    <div class="card bg-dark text-white  " style="border-radius: 0">
       <img
         src="./images/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg"
-        class="card-img"
+        class="card-img "
         alt="..."
+        style="background-size: cover; height: 100vh"
       />
-      <div class="container d-flex flex-column card-img-overlay mt-5">
+      <div class="container col-lg-6 card-img-overlay card-img-overlay mt-5">
         <h1 class="card-title display-2 p-4">Jane Doe</h1>
-        <p class="card-text h2 col-10 p-4">
+        <p class="card-text h2 col-md-10 col-lg-12 col-s-6 p-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
           distinctio rerum vero culpa tempora veritatis deleniti porro saepe,
           eveniet vel alias a dolorem est sint architecto nisi minima sapiente!
@@ -29,36 +30,64 @@
       </div>
     </div>
 
+
+    
+
     <!-- footer -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-start align-items-center container-fluid fixed-bottom"
+    >
       <a class="navbar-brand pl-2" href="#">
         <img
           src="./images/computer.svg"
           width="30"
           height="30"
-          class="d-inline-block align-top mr-3"
+          class="d-inline-block align-top mr-1"
           alt=""
           loading="lazy"
-        />Jane Doe</a
-      >
+      /></a>
+      <a class="navbar-brand" href="#">
+        <h3 class="d-inline-block font-weight-bold text-white mb-0">
+          Jane Doe
+        </h3>
+      </a>
 
-      <div class="collapse navbar-collapse d-flex" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+      
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </body>
 </html>
+
+<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
